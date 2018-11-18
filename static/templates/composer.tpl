@@ -4,7 +4,9 @@
 		<nav class="navbar navbar-fixed-top mobile-navbar hidden-md hidden-lg">
 			<div class="btn-group">
 				<button class="btn btn-sm btn-primary composer-discard" data-action="discard" tabindex="-1"><i class="fa fa-times"></i></button>
-				<button class="btn btn-sm btn-primary composer-minimize" data-action="minimize" tabindex="-1"><i class="fa fa-minus"></i></button>
+				<!-- <button class="btn btn-sm btn-primary composer-minimize" data-action="minimize" tabindex="-1"><i class="fa fa-minus"></i></button> //-->
+				<button class="btn btn-sm btn-primary composer-collapse" data-action="collapse" tabindex="-1"><i class="fa fa-window-minimize"></i></button>
+				<button class="btn btn-sm btn-primary composer-expand" data-action="expand" tabindex="-1"><i class="fa fa-window-maximize"></i></button>
 			</div>
 			<!-- IF isTopic -->
 			<div class="category-name-container">

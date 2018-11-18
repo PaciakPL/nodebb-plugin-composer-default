@@ -368,6 +368,16 @@ define('composer', [
 			composer.minimize(post_uuid);
 		});
 
+		postContainer.find('.composer-collapse').on('click', function(e) {
+			e.preventDefault();
+			$(this).closest('.composer').addClass('collapsed');
+		});
+
+		postContainer.find('.composer-expand').on('click', function(e) {
+			e.preventDefault();
+			$(this).closest('.composer').removeClass('collapsed');
+		});
+
 		bodyEl.on('input propertychange', function() {
 			preview.render(postContainer);
 		});

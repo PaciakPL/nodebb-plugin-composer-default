@@ -368,6 +368,27 @@
 			height: 100%;
 			overflow: hidden;
 			z-index: @zindex-popover + 10;
+
+			.composer-expand {
+				display: none;
+			}
+
+			.composer-collapse {
+				display: inline-block;
+			}
+
+			&.collapsed {
+				height: 40px;
+				top: auto;
+
+				.composer-expand {
+					display: inline-block;
+				}
+
+				.composer-collapse {
+					display: none;
+				}
+			}
 		}
 
 		body {
